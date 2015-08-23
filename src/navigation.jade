@@ -1,0 +1,25 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset='UTF-8')
+    meta(content='IE=edge', http-equiv='X-UA-Compatible')
+    title BEMのしゅくだい
+    link(rel='stylesheet', href='styles/navigation.css', media='all')
+  body
+
+    - var navs = [{text: 'ホーム', count: '' }, {text: '生放送', count: 65 }, {text: '録画', count: 2154}, {text: 'コース', count: 264}, {text: 'カリキュラム', count: '' }, {text: 'グループ', count: '' }]
+
+    nav.gnav
+      ul.gnav__inner
+        each nav, i in navs
+          if i == 0
+            li.gnav__item.gnav__item_current
+              a.gnav__link(href="#")
+                = nav.text
+          else
+            li.gnav__item
+              a.gnav__link(href="#")
+                = nav.text
+                if nav.count
+                  span.gnav__count= nav.count
+
