@@ -1,0 +1,107 @@
+/* base */
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* card */
+
+.card {
+  width: 180px;
+  &__image {
+    position: relative;
+    margin-bottom: 5px;
+  }
+  &__img {
+    width: 100%;
+    border: 1px solid rgba(49, 55, 72, .05);
+    border-radius: 2px;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &__btn {
+    position: absolute;
+    bottom: 1px;
+    right: 0;
+    padding: 5px;
+    background-color: rgba(49, 44, 72, .7);
+  }
+  &__count {
+    position: relative;
+    float: left;
+    padding: 2px 7px;
+    margin-top: 3px;
+    margin-right: 6px;
+    margin-left: 2px;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    font-size: 11px;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+      border: 4px solid transparent;
+    }
+    &:before {
+      border-left-color: #444;
+    }
+    &:after {
+      border-left-color: #fff;
+    }
+  }
+  &__watch {
+    display: block;
+    float: left;
+    width: 31px;
+    height: 31px;
+    background-image: url('https://s3-ap-northeast-1.amazonaws.com/i.schoo/images/common/sprite_watch_btn.png');
+    background-position: -450px 0;
+    cursor: pointer;
+  }
+  &__schedule {
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #313748;
+    text-align: center;
+  }
+  &__icon {
+    margin-right: 5px;
+  }
+  &__time {
+    font-style: normal;
+  }
+  &__title {
+    overflow: hidden;
+    height: 3em;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+  &__link {
+    color: #313748;
+  }
+}
+
