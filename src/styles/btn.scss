@@ -1,0 +1,19 @@
+.btn {
+  width: 120px;
+  padding: 6px 0;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 3px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  &_color_blue {
+    border-bottom: 3px solid #026f84;
+    background: linear-gradient(to bottom, #45bad0, #1f9ab1);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .4);
+    &:hover {
+      border-bottom: 3px solid #015969;
+      background: linear-gradient(to bottom, #2fa4ba, #0f89a0);
+    }
+  }
+}
